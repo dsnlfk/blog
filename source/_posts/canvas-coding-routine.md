@@ -32,10 +32,10 @@ paragraphs[nextId].render();
 合适的时机切分，考虑切分的上下关联性、过渡性；
 
 ```
-为舞台添加零件 secen.addChild(material.el);
-零件的业务coding／动画表现；
-(行为驱动)在正确的行为时机抛出事件，根据当前屏标示触发进入目标屏;
-
+1.为舞台添加零件 secen.addChild(material.el);
+2.零件的业务coding／动画表现；
+3.(行为驱动)在正确的行为时机抛出事件，根据当前屏标示触发进入目标屏;
+4.在合适的时机清除上一屏内容；
 ```
 
 ## 元素编写
@@ -43,6 +43,7 @@ paragraphs[nextId].render();
 2.elefit.allin/zoonWidth/zoonHeight 转换获取；
 3._.createCvEl(type, op, params);
 4.Sprict类型还需定义animation；
+5.元件颗粒化组织程度受是否整屏动效影响，如与分屏对应的‘prg’元件内含多个真正颗粒化元件；
 
 ## 常用utils
 ### loadsrc(arr, cb, cbPercent)
