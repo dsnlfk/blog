@@ -7,7 +7,8 @@
   },
   "scripts": {
     "s": "hexo server",
-    "r": "hexo generate"
+    "r": "hexo generate",
+    "smt": "git add --all && git commit -m'mark' && git pull origin master && git status"
   },
   "dependencies": {
     "hexo": "^3.2.0",
